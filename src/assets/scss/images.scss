@@ -1,0 +1,30 @@
+// -brand-img-
+.brand-img {
+    width: 130px;
+    height: auto;
+}
+
+@media (min-width: 992px) {
+    .brand-img {
+        width: 200px;
+    }
+}
+
+.img-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: block;
+}
+
+@media (min-width: 992px) {
+
+    .img-container {
+        height: 200px;
+    }
+
+    .img-container img {
+        position: relative;
+        top: -150px;
+    }
+}

@@ -1,0 +1,52 @@
+/* fonts */
+
+/* -futura-pt- */
+@font-face {
+	font-family: "Futura PT Light";
+	src: url("../fonts/Futura-PT/FuturaPTLight.otf")  format('truetype');
+}
+
+@font-face {
+	font-family: "Futura PT";
+	src: url("../fonts/Futura-PT/FuturaPTMedium.otf")  format('truetype');
+	font-weight: normal; 
+}
+
+@font-face {
+	font-family: "Futura PT";
+	src: url("../fonts/Futura-PT/FuturaPTBold.otf")  format('truetype');
+	font-weight: bold; 
+}
+
+/* -great-vibes- */
+@font-face {
+	font-family: "Great Vibes";
+	src: url("../fonts/great-vibes/GreatVibes-Regular.ttf")  format('truetype');
+}
+
+/* the-end-of-fonts */
+
+
+/* font-families */
+.ff-futura-pt, body, .text-btn, .title-1, .text-btn-3, .title-2, .text-btn-4  {
+    font-family: "Futura PT", sans-serif;
+}
+
+.ff-futura-pt-light, .text-1  {
+    font-family: "Futura PT Light", sans-serif;
+}
+
+.ff-great-vibes {
+    font-family: "Great Vibes", cursive;
+}
+
+/* the-end-of-font-families */	
+
+
+/* sizes */
+
+.small-font {
+	font-size: 12px !important;
+}
+
+/* the-end-of-sizes */

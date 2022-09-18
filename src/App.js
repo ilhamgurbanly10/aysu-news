@@ -1,40 +1,23 @@
-import logo from './logo.svg';
-import './App.scss';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Footer from './Footer';
-// import Example from './Example';
+import { BrowserRouter } from "react-router-dom";
 
-import Header from './pages/Header';
-import Home from './pages/Home';
-import Gallery from './pages/Gallery';
-import News from './pages/News';
-import Login from './pages/Login';
-import Error404 from './pages/Error_404';
+import Layout from './pages/Layout';
+import Routing from './components/Routing';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
+import "../node_modules/slick-carousel/slick/slick.css";
+import "../node_modules/slick-carousel/slick/slick-theme.css";
+import './assets/scss/library.scss';
+import '../node_modules/font-awesome/css/font-awesome.min.css'; 
+import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 
 function App() {
   return (
       <BrowserRouter>
-      <Routes>
-          <Route path="/" element={<Header />}>
-              <Route index element={<Home />} />
-              <Route path="gallery" element={<Gallery />} />
-              <Route path="news" element={<News />} />
-              <Route path="login" element={<Login />} />
-              <Route path="*" element={<Error404 />} />
-          </Route>
-      </Routes>
+        <Layout>
+            <Routing/>
+        </Layout>
       </BrowserRouter>
   );
 }
-
-// function App() {
-//   return (
-//     <div>
-//       <Example />
-//       <p>Hallo</p>
-//       <Footer />
-//     </div>
-//   );
-// }
 
 export default App;

@@ -1,8 +1,8 @@
 function Error_404() {
     return (
-      <div>
-        I am Error_404
-      </div>  
+      <h1 className="error-404-text full-screen-text">
+        Page is not found
+      </h1>  
     );
 }
   

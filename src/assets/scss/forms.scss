@@ -1,0 +1,173 @@
+// -search-form-
+.search-form-dropdown-toggler:focus {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.search-form-dropdown-toggler i {
+    transition: all .3s;
+}
+
+.search-form-dropdown-toggler:focus i {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.search-form-dropdown {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s .5s;
+    padding: 1.3rem 1rem;
+}
+
+.search-form-dropdown-toggler:focus  ~ .search-form-dropdown {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.search-form-result-list {
+    display: none;
+    position: absolute;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    padding: 1.3rem 1rem;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: left;
+}
+
+.search-form-result-list.show {
+    display: block;
+}
+
+.search-form-btn:disabled {
+    color: grey !important;
+    cursor: initial;
+}
+
+.search-form-reset {
+    display: none;
+}
+
+.search-form-reset.show {
+    display: inline-block;
+}
+
+// -input-
+.input,
+.input-2 {
+    padding: 1rem 4rem 1rem 10.5rem;
+    border: 3px solid $green !important;
+    border-radius: 5px;
+    color: $black;
+    outline: 0 !important;
+    width: 100%
+}
+
+.input-2 {
+    background-color: $green3;
+    border-color: $green3 !important;
+    color: $lightgreen;
+}
+
+.input-2::-moz-placeholder {
+    color: $lightgreen;
+    opacity: 1;
+}
+.input-2::placeholder {
+    color: $lightgreen;
+    opacity: 1;
+}
+
+.input-3 {
+    padding: 1rem 1rem 1rem 3.5rem;
+    border: 1px solid $lightgrey2 !important;
+    border-radius: 3px;
+    color: $black;
+    outline: 0 !important;
+    width: 100%;
+}
+
+.input-3::-moz-placeholder {
+    color: $lightgrey;
+    opacity: 1;
+}
+.input-3::placeholder {
+    color: $lightgrey;
+    opacity: 1;
+}
+
+.side-form-btn {
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    height: 100%;
+}
+
+// -checkbox-container-
+.checkbox-container {
+    text-align: left !important;
+}
+
+.checkbox-container .form-check-input {
+    border: 0 !important;
+    border-radius: 0 !important;
+}
+
+.checkbox-container .form-check-input:focus {
+    box-shadow: none !important;
+}
+
+.checkbox-container .form-check-input:checked {
+    background-color: $green !important;
+}
+
+.checkbox-container-2 {
+    color: $white;
+}
+
+.checkbox-container-3 .form-check-input {
+    border: 1px solid $darkgrey !important; 
+}    
+
+// -side-form-
+.side-form-container {
+    overflow: hidden;
+    max-height: 0;
+    transition: all 1s;
+}
+
+.side-form-container.show {
+    max-height: 1000px;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid $lightgrey2;
+}
+
+.side-form-toggler {
+    width: 100%;
+}
+
+.side-form-toggler i {
+    transition: all .3s;
+}
+
+.side-form-toggler.active i {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.side-form-line {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $lightgrey2;
+    width: 2px;
+    height: 40%;
+}
+
+
+
+
+

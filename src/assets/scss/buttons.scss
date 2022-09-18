@@ -1,0 +1,169 @@
+.back-to-top-btn {
+    background-color: $green;
+    color: $white;
+    padding: .7rem 1rem;
+    @include SetPosition(fixed, initial, 0, 0, initial);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+    z-index: 999999999;
+    border: 0 !important;
+}
+
+.back-to-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+// -text-btn-
+.text-btn {
+    color: $black !important;
+    font-size: 18px;
+    padding: 0 !important;
+    display: inline-block;
+}
+
+// -text-btn-2
+.text-btn-2 {
+    color: $green !important;
+    font-size: 16px;
+    padding: 0 !important;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+// -text-btn-3
+.text-btn-3 {
+    color: $darkgrey !important;
+    font-size: 18px;
+    padding: 0 !important;
+    display: inline-block;
+}
+
+// -text-btn-4
+.text-btn-4 {
+    color: $black !important;
+    background-color: transparent;
+    border: 0 !important;
+    outline: 0 !important;
+    text-decoration: none !important;
+    font-size: 18px;
+    padding: 0 !important;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.text-btn-4 i {
+    color: $lightgrey;
+}
+
+// -iconic-btn-
+.iconic-btn,
+.iconic-btn-2 {
+    padding: 0;
+    border: 0 !important;
+    outline: 0 !important;
+    text-decoration: none !important;
+    color: $black !important;
+    transition: color .3s;
+    background-color: transparent !important;
+    font-size: 21px;
+}
+
+.iconic-btn-2 {
+    color: $lightgrey !important;
+}
+
+@media (hover: hover) {
+    .iconic-btn:hover {
+        color: $green !important;
+    }
+}
+
+.iconic-btn:active {
+    color: $green !important;
+}
+
+// -grey-iconic-btn-
+.grey-iconic-btn {
+    color: $lightgrey !important;
+}
+
+@media (hover: hover) {
+    .grey-iconic-btn:hover {
+        color: $green !important;
+    }
+}
+
+.grey-iconic-btn:active {
+    color: $green !important;
+}
+
+// -btn-1-
+.btn-1,
+.btn-6 {
+    color: $black !important;
+    padding: 0 1.5rem;
+    border: 3px solid $green !important;
+    border-radius: 5px 0 0 5px;
+    background-color: $white;
+    display: inline-block;
+
+}
+
+.btn-6 {
+    border-color: $green2 !important;
+    background-color: $green2;
+    color: $white !important;
+}
+
+// -btn-3-
+.btn-3 {
+    display: inline-block;
+    color: $black !important;
+    padding: .7rem;
+    border: 0;
+    border-radius: 5px;
+    background-color: $lightgrey2;
+
+}
+
+// -btn-4-
+.btn-4,
+.btn-5 {
+    display: inline-block;
+    color: $black !important;
+    padding: .3rem .8rem;
+    border: 1px solid $lightgrey2;
+    border-radius: 5px;
+    background-color: $white;
+    text-align: left;
+}
+
+.btn-5 {
+    border: 0 !important;
+    border-radius: 0;
+}
+
+// -rounded-btn-
+.rounded-btn {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: $white !important;
+    border-radius: 100%;
+    border: 0 !important;
+    background-color: $darkblue;
+}
+
+.twitter-btn {
+    background-color: $lightblue;
+}
+
+.linkedin-btn {
+    background-color: $darkblue;
+}
+
+

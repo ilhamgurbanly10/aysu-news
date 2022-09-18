@@ -1,8 +1,10 @@
+import About from '../components/About';
+
 function Home() {
     return (
-      <div>
-        I am Home
-      </div>  
+      <>
+        <About/>
+      </>  
     );
 }
   

@@ -1,0 +1,131 @@
+
+// navbar-animation
+.navbar {
+    transition: all .5s;
+    background-color: $white;
+	z-index: 3000;
+}
+
+
+// the-end-of-navbar-animation
+
+
+/* navbar-toggler */
+@media only screen and (max-width: 991.98px) {
+
+	.navbar-toggler {
+		position: relative;
+	    width: 40px;
+	    height: 40px;
+	    line-height: 40px;
+	    cursor: pointer;
+	    background-color: $white;
+	    border: none;
+	    border-radius: 5px;
+	    padding: 0 !important;
+	    margin-top: 0 !important;
+	    border: 0 !important;
+	    outline: 0 !important;
+		box-shadow: none !important;
+	}
+
+	.navbar-toggler-line {
+		position: relative;
+	    display: block;
+	    margin: auto;
+	    transition: 0.3s all ease;
+	} 
+
+	.navbar-toggler-line::before,
+	.navbar-toggler-line,
+	.navbar-toggler-line::after {
+		width: 22px;
+	    height: 2px;
+	    background-color: $black;
+	    backface-visibility: hidden;
+	    border-radius: 0;
+	}
+
+	.navbar-toggler-line::before,
+	.navbar-toggler-line::after {
+		content: "";
+	    position: absolute;
+	    left: 0;
+	    top: -8px;
+	    transition: all 0.3s ease;
+	}   
+
+	.navbar-toggler-line::after {
+		top: 8px;
+	}
+
+	@media (hover: hover) {
+		.navbar-toggler:hover .navbar-toggler-line::before,
+		.navbar-toggler:hover .navbar-toggler-line,
+		.navbar-toggler:hover .navbar-toggler-line::after {
+			background-color: #e3e2e2;
+		}
+	}	
+
+	.navbar-toggler:active .navbar-toggler-line::before,
+	.navbar-toggler:active .navbar-toggler-line,
+	.navbar-toggler:active .navbar-toggler-line::after {
+		background-color: #e3e2e2;
+	}	
+
+	.navbar-toggler[aria-expanded="true"] .navbar-toggler-line::before {
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+	    transform: rotate(45deg);
+	    transform-origin: 50% 50%;
+	    top: 0;
+	}
+
+	.navbar-toggler[aria-expanded="true"]  .navbar-toggler-line {
+		background: transparent !important;
+	    transition: background 0.1s ease;
+	}
+
+	.navbar-toggler[aria-expanded="true"]  .navbar-toggler-line::after {
+		-webkit-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+	    transform: rotate(-45deg);
+	    transform-origin: 50% 50%;
+	    top: 0;
+	}
+
+}	
+
+/* the-end-of-navbar-toggler */ 
+
+// -green-navbar-
+.green-navbar .text-btn {
+	color: $white !important;
+}
+
+.green-navbar .btn-underline::before  {
+	background-color: $white !important;
+}
+
+.green-navbar .navbar-toggler {
+	background-color: transparent !important;
+}
+
+.green-navbar .navbar-toggler-line::before,
+.green-navbar .navbar-toggler-line,
+.green-navbar .navbar-toggler-line::after {
+	background-color: $white;
+}
+
+.green-navbar:not(.green-navbar-2) .search-form-btn:not(:disabled) {
+	color: $white !important;
+}
+
+.green-navbar-2 .search-form-input,
+.green-navbar-2 .search-form-dropdown-toggler {
+	border-color: $white !important;
+}
+
+
+
+
