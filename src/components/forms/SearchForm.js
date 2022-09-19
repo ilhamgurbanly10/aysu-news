@@ -23,7 +23,7 @@ const SearchForm = (props) => {
     }, []);
 
     return (
-        <form className={`search-form w-100 ${className}`} id={id} action="results">
+        <form className={`search-form w-100 ${className}`} id={id}>
             
             <div className="search-form-container position-relative">
 
@@ -35,9 +35,9 @@ const SearchForm = (props) => {
                         <i className="fa fa-times"></i>
                     </button>
 
-                    <button type="submit" className="search-form-btn  search-form-submit iconic-btn rotate-icon"  name="searchSubmit">
+                    <Link to="/results" className="search-form-btn  search-form-submit iconic-btn rotate-icon">
                         <i className="fa fa-search"></i>
-                    </button>
+                    </Link>
                     
                 </div>
 
