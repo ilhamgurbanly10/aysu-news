@@ -1,13 +1,85 @@
-.title-1,
-.title-2 {
-    color: $black;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 42px;
+// -title-1-
+.title-1 {
+    font-size: 25px;
+    font-weight: normal;
+    color: $white;
     margin: 0 auto;
 }
 
+// -title-2-
 .title-2 {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 24px;
+    font-weight: bold;
+    color: $black4;
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+
+    .title-2 { 
+        font-size: 32px;
+    }    
+}
+
+// -title-3-
+.title-3 {
+    font-size: 23px;
+    font-weight: normal;
+    color: $black4;
+    margin: 0 auto;
+}
+
+// -title-underline-
+.title-underline {
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.title-underline::before,
+.title-underline::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 110px;
+    height: 5px;
+    border-radius: 8px;
+    background-color: $darkblue2;
+}
+
+.title-underline::after {
+    left: 120px;
+    width: 30px;
+}
+
+// -title-underline-2-
+.title-underline-2 {
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.title-underline-2::before,
+.title-underline-2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 4px;
+    border-radius: 8px;
+    background-color: $darkblue2;
+}
+
+.title-underline-2::after {
+    left: 24%;
+    width: 76%;
+    background-color: $lightgrey4;
+}
+
+// -title-4-
+.title-4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: $white;
+    margin: 0 auto;
 }

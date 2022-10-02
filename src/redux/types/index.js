@@ -1,0 +1,19 @@
+// breaking-news
+export const DELETE_BREAKING_NEWS = 'DELETE_BREAKING_NEWS'
+export const EDIT_BREAKING_NEWS = 'EDIT_BREAKING_NEWS'
+
+// sponsored-news
+export const DELETE_SPONSORED_NEWS = 'DELETE_SPONSORED_NEWS'
+export const EDIT_SPONSORED_NEWS = 'EDIT_SPONSORED_NEWS'
+
+// todays-top-highlights
+export const DELETE_TODAYS_TOP_HIGHLIGHTS = 'DELETE_TODAYS_TOP_HIGHLIGHTS'
+export const EDIT_TODAYS_TOP_HIGHLIGHTS = 'EDIT_TODAYS_TOP_HIGHLIGHTS'
+
+// sider-posts
+export const DELETE_POPULAR_NEWS = 'DELETE_POPULAR_NEWS'
+export const EDIT_POPULAR_NEWS = 'EDIT_POPULAR_NEWS'
+
+// main-news
+export const DELETE_MAIN_NEWS = 'DELETE_MAIN_NEWS'
+export const EDIT_MAIN_NEWS = 'EDIT_MAIN_NEWS'

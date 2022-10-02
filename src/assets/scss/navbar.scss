@@ -1,9 +1,21 @@
 
 // navbar-animation
-.navbar {
+.header {
     transition: all .5s;
     background-color: $white;
-	z-index: 3000;
+	z-index: 1000;
+}
+
+.header.is-hidden {
+    top: -100% !important;  
+}
+
+.header.is-scrolled  {
+    top: 0 !important;
+}
+
+.header.is-scrolled .head-container {
+	display: none;
 }
 
 
@@ -94,37 +106,30 @@
 	    top: 0;
 	}
 
+	// -mobile-navbar-collapse-
+	.mobile-navbar-collapse {
+		background-color: $black2;
+		position: fixed;
+		top: 0;
+		left: -100%;
+		opacity: 0;
+		width: 300px;
+		padding: 1.7rem;
+		transition: all .5s;
+		height: 100vh;
+		overflow: auto;
+	}
+
+	.mobile-navbar-collapse.show {
+		left: 0;
+		opacity: 1;
+	}
+
 }	
 
 /* the-end-of-navbar-toggler */ 
 
-// -green-navbar-
-.green-navbar .text-btn {
-	color: $white !important;
-}
 
-.green-navbar .btn-underline::before  {
-	background-color: $white !important;
-}
-
-.green-navbar .navbar-toggler {
-	background-color: transparent !important;
-}
-
-.green-navbar .navbar-toggler-line::before,
-.green-navbar .navbar-toggler-line,
-.green-navbar .navbar-toggler-line::after {
-	background-color: $white;
-}
-
-.green-navbar:not(.green-navbar-2) .search-form-btn:not(:disabled) {
-	color: $white !important;
-}
-
-.green-navbar-2 .search-form-input,
-.green-navbar-2 .search-form-dropdown-toggler {
-	border-color: $white !important;
-}
 
 
 

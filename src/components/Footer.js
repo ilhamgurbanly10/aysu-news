@@ -1,28 +1,48 @@
-import { Facebook, Twitter, Linkedin, GreyLink } from "./elements/Buttons";
 import { Languages } from "./elements/Dropdowns";
-
+import {useTranslation} from "react-i18next";
+import Images from "./Images";
 import { Link } from "react-router-dom";
+import {ImportantLinks, BrowseTags, SocialMedia} from './elements/Lists'
 
-function Footer() {
+const Footer = () => {
+
+    const {t, i18n} = useTranslation('footer');
 
     return (
-        <footer className='footer mt-7 py-5 border-top-1 container-1 d-flex justify-content-start align-items-center'>
-           
-           <div className="footer-social-networks-list ms-auto ms-lg-0">
-                <Twitter to="/" className="grow-on-hover me-3"></Twitter>
-                <Facebook to="/" className="grow-on-hover me-3"></Facebook> 
-                <Linkedin to="/" className="grow-on-hover"></Linkedin>
-           </div>
+        <footer className='footer mt-5'>      
 
-           <div className="footer-btn-list ms-5 ps-5 d-none d-lg-flex justify-content-start align-items-center">
-                <GreyLink className="footer-btn btn-underline me-5" to="/">Terms of Service</GreyLink>
-                <GreyLink className="footer-btn btn-underline me-5" to="/">Privacy Policy</GreyLink>
-                <GreyLink className="footer-btn btn-underline" to="/">Trust & Safety</GreyLink>
-           </div>
+            <div className="footer-container bg-black-2 container-1 py-6 row w-100 gx-0 justify-content-center justify-content-lg-between align-items-start">
 
-           <Languages className="ms-lg-auto order-first order-lg-last" btnClass="btn-4" linkClass="btn-5"/>
+                <div className="footer-inner-container col-12 col-lg-3">
 
-            
+                    <img src={Images.logo2} alt="Brand Image" className="brand-img" />
+
+                    <p className="footer-text text-1 mt-4">
+                        {t('texts.text01')}
+                    </p>
+
+                </div>
+
+                <ImportantLinks/>
+
+                <BrowseTags/>
+
+                <SocialMedia/>
+
+            </div>
+
+            <div className="footer-bottom-container bg-black-3 container-1 py-4 py-lg-3 d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center">
+
+                <p className="footer-copyright text-1 text-center text-lg-start m-0 small-font-2">
+                    {t('texts.copyright') }
+                </p>
+
+                <div className="w-100 mt-4 d-lg-none"></div>
+
+                <Languages placement="top" />
+
+            </div>
+
         </footer>
     );
 }

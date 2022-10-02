@@ -12,6 +12,4 @@ function FlashProgress() {
 
 }
 
-export function endProgress() { document.querySelector('.fl-progress').classList.add('fl-progress-is-ended'); }
-
 export default FlashProgress;

@@ -1,119 +1,56 @@
-import {useEffect} from 'react';
-import {SearchResult} from '../flash/Functions';
+import {useEffect, useRef, useState} from 'react';
 import { Link } from "react-router-dom";
 import { useSearchParams } from 'react-router-dom';
+import {useTranslation} from "react-i18next";
 
-const SearchForm = (props) => {
-    
-    const {className, id, inputClass, btnClass, dropdownClass, listClass, linkClass, allLinkClass, checkboxClass} = props;
+const SearchForm = () => {
+
+    const {t, i18n} = useTranslation('header');
+    const [formIsShown, showForm] = useState(false);
+
+    const toggler = useRef();
+    const form = useRef();
+
+    const toggleForm = () => {
+        form.current.classList.contains('show') ? showForm(false) : showForm(true); 
+    }
+
+    const hideForm = () => showForm(false);
+
+    const stop = (event) => event.stopPropagation();
 
     let [searchParams, setSearchParams] = useSearchParams();
 
     const writeToUrl = event => {
         let val = document.querySelector('#searchText').value;
-        let checkbox1 = document.querySelector('#searchOnlyDomain').checked;
-        let checkbox2 = document.querySelector('#searchOtherOptions').checked;
-         
-        setSearchParams(`name=${val}&only-domain=${checkbox1}&other-options=${checkbox2}`);
+        setSearchParams(`name=${val}`);
     }
 
     useEffect(() => {
-        const form = document.querySelector(`#${id}`);
-        SearchResult(form);
+        document.addEventListener('click', function() { hideForm() })
     }, []);
 
     return (
-        <form className={`search-form w-100 ${className}`} id={id}>
-            
-            <div className="search-form-container position-relative">
+        <div className="search-form-container position-relative">
 
-                <input type="text" onChange={writeToUrl} className={"search-form-input " + inputClass} name="searchText" id="searchText" placeholder="Search something..." />
-                
-                <div className="search-form-btn-list position-absolute end-0 top-0 h-100 pe-4 d-flex justify-content-center align-items-center">
+            <button type="button" onClick={(event) => { toggleForm(); stop(event); }} className={`search-form-toggler iconic-btn rotate-icon me-3 ${formIsShown ? 'active' : ''}`}>
+                <i className={`fa fa-${formIsShown ? 'times' : 'search'}`}></i>
+            </button>
 
-                    <button type="reset" className="search-form-btn search-form-reset iconic-btn grey-iconic-btn me-4 rotate-icon">
-                        <i className="fa fa-times"></i>
-                    </button>
+            <form className={`search-form rounded bg-white p-3 p-lg-4 ${formIsShown ? 'show' : ''}`} onClick={(event) => { stop(event); }} ref={form}>
 
-                    <Link to="/results" className="search-form-btn  search-form-submit iconic-btn rotate-icon">
+                <div className="search-form-group position-relative m-2">
+
+                    <input type="text" onChange={writeToUrl} className="search-form-input input-1" name="searchText" id="searchText" placeholder={t('search.placeholder',)} />
+
+                    <Link to="/results" className="search-form-btn search-form-submit iconic-btn rotate-icon">
                         <i className="fa fa-search"></i>
                     </Link>
-                    
-                </div>
 
-                <div className="search-form-dropdown-container position-absolute top-0 start-0 h-100">
+                </div>    
 
-                    <button type="button" className={"search-form-dropdown-toggler h-100 " + btnClass}>
-                        Resources  <i className="ms-3 fa fa-chevron-down"></i>
-                    </button>
-
-                    <div className={"search-form-dropdown w-100 " + dropdownClass}>
-                    
-                        <div className={"form-check-reverse " + checkboxClass}>
-                            <input className="form-check-input" type="checkbox" onChange={writeToUrl} value="" id="searchOnlyDomain" name="searchOnlyDomain"/>
-                            <label className="form-check-label" for="searchOnlyDomain">
-                                Only domain
-                            </label>
-                        </div>
-
-                        <div className={"form-check-reverse mt-3 " + checkboxClass}>
-                            <input className="form-check-input" type="checkbox" onChange={writeToUrl} value="" id="searchOtherOptions" name="searchOtherOptions" />
-                            <label className="form-check-label" for="searchOtherOptions">
-                                Other options
-                            </label>
-                        </div>
-
-                    </div>
-                    
-                </div>
-
-                <ul className={"search-form-result-list " + listClass}>
-                    
-                    <li className="search-form-result-item">
-
-                        <Link className={"search-form-result-link " + linkClass} to="/">
-                            Adobe
-                        </Link>
-
-                    </li>
-
-                    <li className="search-form-result-item">
-
-                        <Link className={"search-form-result-link mt-3 " + linkClass} to="/">
-                            Adobe Photoshop
-                        </Link>
-
-                    </li>
-
-                    <li className="search-form-result-item">
-
-                        <Link className={"search-form-result-link mt-3 " + linkClass} to="/">
-                            Adobe Illustrator
-                        </Link>
-
-                    </li>
-
-                    <li className="search-form-result-item">
-
-                        <Link className={"search-form-result-link mt-3 " + linkClass} to="/">
-                            Adobe XD
-                        </Link>
-
-                    </li>
-
-                    <li className="search-form-result-item">
-
-                        <Link className={"search-form-result-link mt-3 " + allLinkClass} to="/">
-                            Show 599 finded domains
-                        </Link>
-
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </form>       
+            </form>  
+        </div>     
     );
 
 }

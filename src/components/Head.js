@@ -8,7 +8,7 @@ function Head()  {
     return (
       <>
         <Helmet>
-            <title>Domainfinder - {FlashGetPageName()}</title>
+            <title>Aysu News - {FlashGetPageName()}</title>
         </Helmet>
       </>
     );

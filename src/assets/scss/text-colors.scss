@@ -1,11 +1,29 @@
-.color-darkgrey {
-    color: $darkgrey !important;
+.txt-darkgrey {
+    color: $darkgrey2;
 }
 
-.color-lightgrey {
-    color: $lightgrey !important;
+.txt-darkblue {
+    color: $darkblue !important;
 }
 
-.color-green {
-    color: $green;
+.txt-verydarkblue {
+    color: $verydarkblue !important;
+}
+
+.txt-black {
+    color: $black !important;
+}
+
+.txt-white {
+    color: $white !important;
+}
+
+@media (hover: hover) {
+    .txt-white-on-hover:hover {
+        color: $white !important;
+    }
+}
+
+.txt-white-on-hover:active {
+    color: $white !important;
 }

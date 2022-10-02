@@ -1,0 +1,27 @@
+{
+    "texts": {
+        "copyright": "Copyright © 2022 Aysu News von Ilham Gurbanly. Alle Rechte vorbehalten.",
+        "text01": "Es gibt viele Variationen von Passagen von Lorem Ipsum, aber die meisten wurden in irgendeiner Form verändert, durch eingespritzten Humor oder willkürliche Wörter, die nicht einmal annähernd glaubwürdig aussehen."
+    },
+    "titles": {
+        "title01": "Wichtiger Link",
+        "title02": "Nach Tag durchsuchen",
+        "title03": "Sozialen Medien"
+    },
+    "links": {
+        "link01": "Nachrichten",
+        "link02": "Laufbahn",
+        "link03": "Technologie",
+        "link04": "Startups",
+        "link05": "Geräte",
+        "link06": "Reise",
+        "link07": "Geschäft",
+        "link08": "Lebensstil",
+        "link09": "Marketing",
+        "link10": "Medizinisch",
+        "link11": "Sport",
+        "link12": "Laufbahn",
+        "link13": "Lebensmittel"
+    }
+
+}

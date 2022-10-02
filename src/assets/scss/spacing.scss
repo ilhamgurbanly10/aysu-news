@@ -1,23 +1,30 @@
 .mt-6 {
-    margin-top: calc(6rem + 6vw);
+    margin-top: 250px;
+}
+
+@media (min-width: 992px) {
+    .mt-6 {
+        margin-top: 190px;
+    }
 }
 
 .mt-7 {
-    margin-top: calc(3rem + 3vw);
+    margin-top: 5rem;
 }
 
-.pb-6 {
-    padding-bottom: 4rem;
+.top-1 {
+    top: 1rem;
 }
 
-.pb-7 {
-    padding-bottom: 2rem;
+.start-1 {
+    left: 1rem;
 }
 
-.top-n1 {
-    top: -50px;
+.p-6 {
+    padding: 1.8rem !important;
 }
 
-.top-6 {
-    top: 60px;
+.py-6 {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
 }

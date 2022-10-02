@@ -1,13 +1,16 @@
 .back-to-top-btn {
-    background-color: $green;
+    background-color: $lightblue;
+    border: 2px solid $darkblue;
     color: $white;
-    padding: .7rem 1rem;
-    @include SetPosition(fixed, initial, 0, 0, initial);
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    @include SetPosition(fixed, initial, 1rem, 1rem, initial);
+    border-radius: 100%;
     visibility: hidden;
     opacity: 0;
     transition: all .5s;
     z-index: 999999999;
-    border: 0 !important;
 }
 
 .back-to-top-btn.show {
@@ -15,155 +18,373 @@
     visibility: visible;
 }
 
-// -text-btn-
-.text-btn {
-    color: $black !important;
-    font-size: 18px;
-    padding: 0 !important;
-    display: inline-block;
-}
-
-// -text-btn-2
-.text-btn-2 {
-    color: $green !important;
-    font-size: 16px;
-    padding: 0 !important;
-    display: inline-block;
-    text-decoration: underline;
-}
-
-// -text-btn-3
-.text-btn-3 {
-    color: $darkgrey !important;
-    font-size: 18px;
-    padding: 0 !important;
-    display: inline-block;
-}
-
-// -text-btn-4
-.text-btn-4 {
-    color: $black !important;
-    background-color: transparent;
-    border: 0 !important;
-    outline: 0 !important;
-    text-decoration: none !important;
-    font-size: 18px;
-    padding: 0 !important;
-    display: inline-block;
-    font-weight: bold;
-}
-
-.text-btn-4 i {
-    color: $lightgrey;
+@media (hover: hover) {
+    .back-to-top-btn:hover {
+        background-color: $darkblue;
+    }
 }
 
 // -iconic-btn-
-.iconic-btn,
-.iconic-btn-2 {
-    padding: 0;
-    border: 0 !important;
-    outline: 0 !important;
-    text-decoration: none !important;
-    color: $black !important;
-    transition: color .3s;
+.iconic-btn {
+    color: $darkgrey2 !important;
     background-color: transparent !important;
-    font-size: 21px;
-}
-
-.iconic-btn-2 {
-    color: $lightgrey !important;
+    padding: 0;
+    border: 0;
+    outline: 0 !important;
+    font-size: 18px;
+    transition: color .3s;
 }
 
 @media (hover: hover) {
     .iconic-btn:hover {
-        color: $green !important;
+        color: $lightblue !important;
     }
 }
 
 .iconic-btn:active {
-    color: $green !important;
-}
-
-// -grey-iconic-btn-
-.grey-iconic-btn {
-    color: $lightgrey !important;
-}
-
-@media (hover: hover) {
-    .grey-iconic-btn:hover {
-        color: $green !important;
-    }
-}
-
-.grey-iconic-btn:active {
-    color: $green !important;
+    color: $lightblue !important;
 }
 
 // -btn-1-
-.btn-1,
-.btn-6 {
-    color: $black !important;
-    padding: 0 1.5rem;
-    border: 3px solid $green !important;
-    border-radius: 5px 0 0 5px;
-    background-color: $white;
-    display: inline-block;
+.btn-1 {
+    color: $white!important;
+    transition: color .3s;
+    font-size: 16px;
+    font-weight: bold;
+    padding: .8rem !important;
+    border: 0 !important;
+    line-height: 25px !important;
+    border-radius: 0 !important;
+    outline: 0 !important;
+    background-color: $black2 !important;
+}
+
+@media (hover: hover) {
+    .btn-1:hover {
+        color: $pink !important;
+    }
+}
+
+.btn-1:active,
+.btn-1.active,
+.btn-1[aria-expanded="true"],
+.btn-1[aria-expanded="true"]::before {
+    color: $pink !important;
+}
+
+@media (min-width: 992px) {
+
+    .btn-1 {
+        color: $black !important;
+        font-size: 18px;
+        padding: 2rem .8rem !important;
+        background-color: #fff !important;
+    }
+
+    
+    
+    .btn-1:active {
+        color: $darkblue !important;
+    }
+
+    .btn-1.active {
+        color: $black !important;
+    }
+
+    @media (hover: hover) {
+        .btn-1:hover {
+            color: $darkblue !important;
+        }
+    }
 
 }
 
-.btn-6 {
-    border-color: $green2 !important;
-    background-color: $green2;
+// -btn-2-
+.btn-2 {
     color: $white !important;
+    transition: color .3s;
+    font-size: 16px;
+    font-weight: bold;
+    padding: .8rem 1.6rem !important;
+    border: 0 !important;
+    line-height: 25px;
+    border-radius: 0 !important;
+    outline: 0 !important;
+    background-color: $black2 !important;
+}
+
+@media (hover: hover) {
+    .btn-2:hover {
+        color: $pink !important;
+    }
+}
+
+.btn-2:active {
+    color: $pink !important;
+}
+
+@media (min-width: 992px) {
+
+    .btn-2 {
+        padding: .7rem 0 !important;
+        color: $black !important;
+        background-color: $white !important;
+    }
+
+    @media (hover: hover) {
+        .btn-2:hover {
+            color: $darkblue !important;
+        }
+    }
+    
+    .btn-2:active {
+        color: $darkblue !important;
+    }
+
+}
+
+// -blue-toggler-
+.blue-navbar-toggler {
+    background-color: $darkblue !important;
+}
+
+.blue-navbar-toggler .navbar-toggler-line::before,
+.blue-navbar-toggler .navbar-toggler-line,
+.blue-navbar-toggler .navbar-toggler-line::after {
+    background-color: #fff;
+}  
+
+// -iconic-btn-2-
+.iconic-btn-2 {
+    color: $white !important;
+    background-color: $black2;
+    border: 1px solid $white;
+    padding: 0;
+    font-size: 22px;
+    width: 45px !important;
+    height: 45px;
+    outline: 0 !important;
+    display: inline-block;
+}
+
+// -toggler- 
+.toggler {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    background-color: $white;
+    border: none;
+    border-radius: 5px;
+    padding: 0 !important;
+    margin-top: 0 !important;
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+.toggler-line {
+    position: relative;
+    display: block;
+    margin: auto;
+    transition: 0.3s all ease;
+} 
+
+.toggler-line::before,
+.toggler-line,
+.toggler-line::after {
+    width: 22px;
+    height: 2px;
+    background-color: $black;
+    backface-visibility: hidden;
+    border-radius: 0;
+}
+
+.toggler-line::before,
+.toggler-line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -8px;
+    transition: all 0.3s ease;
+}   
+
+.toggler-line::after {
+    top: 8px;
+}
+
+@media (hover: hover) {
+    .toggler:hover .toggler-line::before,
+    .toggler:hover .toggler-line,
+    .toggler:hover .toggler-line::after {
+        background-color: $darkblue;
+    }
+}	
+
+.toggler:active .toggler-line::before,
+.toggler:active .toggler-line,
+.toggler:active .toggler-line::after {
+    background-color: #e3e2e2;
+}	
+
+.toggler[aria-expanded="true"] .toggler-line::before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform-origin: 50% 50%;
+    top: 0;
+}
+
+.toggler[aria-expanded="true"]  .toggler-line {
+    background: transparent !important;
+    transition: background 0.1s ease;
+}
+
+.toggler[aria-expanded="true"]  .toggler-line::after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transform-origin: 50% 50%;
+    top: 0;
+}
+
+// -offcanvas-close-btn-
+.offcanvas-close-btn .btn-close {
+    box-shadow: none !important;
+    color: $white !important;
+    padding: .8rem;
+    border-radius: 5px;
+    background-color: $black;
+    background-image: none;
+    position: relative;
+    opacity: 1 !important;
+}
+
+.offcanvas-close-btn .btn-close::before {
+    content: "\f00d";
+    position: absolute;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: $white;
+    font-family: fontAwesome;
+}
+
+// -text-btn-
+.text-btn {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: normal;
+    color: $white !important;
+    transition: color .3s;
+}
+
+@media (hover: hover) {
+    .text-btn:hover {
+        color: $darkblue !important;
+    }
+}
+
+.text-btn:active {
+    color: $darkblue !important;
 }
 
 // -btn-3-
 .btn-3 {
-    display: inline-block;
-    color: $black !important;
-    padding: .7rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
     border: 0;
-    border-radius: 5px;
-    background-color: $lightgrey2;
+    border-bottom: 1px solid $lightgrey3;
+    color: $black2;
+    transition: color .3s;
+    font-size: 16px;
+    padding: 1.2rem 0 !important;
+    border-radius: 0 !important;
+    outline: 0 !important;
+    background-color: $white !important;
+}
 
+.btn-3 i {
+    margin-right: 1rem;
+}
+
+.btn-3 span {
+    margin-left: auto;
+}
+
+.btn-3:last-child {
+    border-bottom: 0 !important;
+}
+
+@media (hover: hover) {
+    .btn-3:hover {
+        color: $darkblue !important;
+    }
+}
+
+.btn-3:active {
+    color: $darkblue !important;
+}
+
+@media (min-width: 992px) {
+    .btn-3 {
+        font-size: 19px;
+    }    
 }
 
 // -btn-4-
-.btn-4,
-.btn-5 {
-    display: inline-block;
+.btn-4 {
+    border: 0 !important;
     color: $black !important;
-    padding: .3rem .8rem;
-    border: 1px solid $lightgrey2;
-    border-radius: 5px;
-    background-color: $white;
-    text-align: left;
 }
 
-.btn-5 {
-    border: 0 !important;
-    border-radius: 0;
-}
-
-// -rounded-btn-
-.rounded-btn {
-    display: inline-block;
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
+// -text-btn-2-
+.text-btn-2 {
+    font-size: 15px;
     color: $white !important;
-    border-radius: 100%;
-    border: 0 !important;
-    background-color: $darkblue;
+    transition: color .3s;
+    display: inline-block;
 }
 
-.twitter-btn {
-    background-color: $lightblue;
+@media (hover: hover) {
+    .text-btn-2:hover {
+        color: $darkblue !important;
+    }
 }
 
-.linkedin-btn {
-    background-color: $darkblue;
+.text-btn-2:active {
+    color: $darkblue !important;
+}
+
+// -btn-5-
+.btn-5 {
+    background-color: $darkgrey !important;
+    padding: .7rem 1.2rem;
+    display: inline-block;
+    border-radius: 7px;
+    font-size: 15px;
+    color: $white !important;
+    transition: color .3s, background-color .3s;
+}
+
+@media (hover: hover) {
+    .btn-5:hover {
+        background-color: $white !important;
+        color: $darkgrey !important;
+    }
+}
+
+.btn-5:active {
+    background-color: $white !important;
+    color: $darkgrey !important;
 }
 
 

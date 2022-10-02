@@ -1,0 +1,32 @@
+{
+    "HeadContainer": {
+        "allNews": "All News",
+        "allNewsText": "You can read all news from the world only here"
+    },
+    "menu": {
+        "item1": "Home",
+        "item2": "News",
+        "item3": "Lifestyle",
+        "item4": "Foods",
+        "item5": "Business",
+        "item6": "Travel",
+        "item7": "About Us"
+    },
+    "subMenu1": {
+        "item1": "Breaking News",
+        "item2": "From the World",
+        "item3": "Country Interior",
+        "item4": "Politics",
+        "item5": "Sport",
+        "item6": "Criminal",
+        "item7": "War",
+        "item8": "Comedy",
+        "item9": "Natural Calamity"
+    },
+    "links": {
+        "latestNews": "Our Latest News"
+    },
+    "search": {
+        "placeholder": "Search here..."
+    }
+}

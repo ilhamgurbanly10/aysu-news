@@ -1,0 +1,32 @@
+{
+    "HeadContainer": {
+        "allNews": "Alle Nachrichten",
+        "allNewsText": "Sie können alle Nachrichten von der Welt nur hier lesen"
+    },
+    "menu": {
+        "item1": "Startseite",
+        "item2": "Nachrichten",
+        "item3": "Lifestyle",
+        "item4": "Gerichte",
+        "item5": "Business",
+        "item6": "Reise",
+        "item7": "Über Uns"
+    },
+    "subMenu1": {
+        "item1": "Aktuelle Nachrichten",
+        "item2": "Aus der Welt",
+        "item3": "Land-Interieur",
+        "item4": "Politik",
+        "item5": "Sport",
+        "item6": "Kriminell",
+        "item7": "Krieg",
+        "item8": "Komödie",
+        "item9": "Naturkatastrophe"
+    },
+    "links": {
+        "latestNews": "Unsere Letzte Nachrichten"
+    },
+    "search": {
+        "placeholder": "Suchen hier..."
+    }
+}

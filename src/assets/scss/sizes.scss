@@ -1,5 +1,55 @@
+
+.min-h-100 {
+    min-height: 100% !important;
+}
+
+// -height-1-
+.height-1 {
+    min-height: 95vw;
+}
+
 @media (min-width: 992px) {
-    .w-lg-initial {
-        width: initial !important;
+    .height-1 {
+        min-height: 37vw;
     }
+}
+
+// -height-2/3-
+.height-2 {
+    min-height: 95vw;
+}
+
+.height-3 {
+    min-height: 50vw;
+}
+
+@media (min-width: 992px) {
+    .height-2,
+    .height-3 {
+        min-height: calc(18.5vw - .5rem);
+    }
+}
+
+// fonts
+
+.responsive-bigger-font {
+    font-size: 20px !important;
+}
+
+.responsive-bigger-font-2 {
+    font-size: 16px !important;
+}
+
+@media (min-width: 576px) {
+
+    .responsive-bigger-font {
+        font-size: 35px !important;
+        line-height: 45px !important;
+    }
+
+    .responsive-bigger-font-2 {
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+
 }

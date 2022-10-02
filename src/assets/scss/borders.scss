@@ -1,20 +1,30 @@
 .border-bottom-1 {
-    border-bottom: 1px solid $lightgrey2;
+    border-bottom: 1px solid $lightgrey;
 }
 
-.border-top-1 {
-    border-top: 2px solid $lightgrey2;
+.bor-1 {
+    border: 1px solid $lightgrey2;
 }
 
-.border-top-2 {
-    border-top: 1px solid $lightgrey2;
+.bor-2 {
+    border: 1px solid $lightgrey3;
 }
 
-.border-1 {
-    border: 1px solid $lightgrey2 !important;
-    border-top: 0 !important;
+// -radiuses-
+
+.rounded-top-1 {
+    border-top-right-radius: .7rem;
+    border-top-left-radius: .7rem;
 }
 
-.border-2 {
-    border: 1px solid $lightgrey2 !important;
+.rounded-1 {
+    border-radius: 1rem !important;
+}
+
+.rounded-6 {
+    border-radius: .7rem !important;
+}
+
+.rounded-7 {
+    border-radius: calc(1rem + 3vw) !important;
 }

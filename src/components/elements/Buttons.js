@@ -1,56 +1,24 @@
 import { Link } from "react-router-dom";
 import {useEffect} from 'react';
 
-export function orangeLink(props) {
+export function IconicBtn(props) {
+
+    const { className, to, icon } = props;
+    
     return (
-        <Link className="btn-1 mt-4" to={props.to}>
-            <span>{props.HTML}</span>
+        <Link className={`iconic-btn btn-rotate ${className}`} to={to}>
+            <i className={`fa fa-${icon}`}></i>
         </Link>            
     );
+
 }
 
-export function Twitter(props) {
+export function TextBtn(props) {
 
     const { className, to } = props;
     
     return (
-        <Link className={`rounded-btn twitter-btn ${className}`} to={to}>
-            <i className="fa fa-twitter"></i>
-        </Link>            
-    );
-
-}
-
-export function Facebook(props) {
-
-    const { className, to } = props;
-
-    return (
-        <Link className={`rounded-btn facebook-btn ${className}`} to={to}>
-            <i className="fa fa-facebook"></i>
-        </Link>            
-    );
-
-}
-
-export function Linkedin(props) {
-
-    const { className, to } = props;
-    
-    return (
-        <Link className={`rounded-btn linkedin-btn ${className}`} to={to}>
-            <i className="fa fa-linkedin"></i>
-        </Link>            
-    );
-
-}
-
-export function GreyLink(props) {
-
-    const { className, to } = props;
-    
-    return (
-        <Link className={`text-btn-3 ${className}`} to={to}>
+        <Link className={`text-btn ${className}`} to={to}>
             {props.children}
         </Link>            
     );
@@ -78,5 +46,4 @@ export const BackToTopBtn = () => {
     return <button className="back-to-top-btn rotate-icon"><i className="fa fa-chevron-up"></i></button>   
 }
 
-export default orangeLink;
   

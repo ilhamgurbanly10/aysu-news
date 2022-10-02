@@ -1,28 +1,14 @@
-// -dropdown-
-.dropdown {
-    border: 3px solid $green !important;
-    border-top: 0 !important;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    background-color: $white;
+// -dropdown-1-
+.dropdown-1 {
+    border: 0;
+    padding: 2.5rem 1.2rem;
+    border-radius: 0;
+    background-color: #fff;
+    min-width: 230px;
 }
 
 // -dropdown-2-
 .dropdown-2 {
-    border: 3px solid $green !important;
-    border-radius: 5px;
-    background-color: $white;
-}
-
-// -dropdown-4-
-.dropdown-4 {
-    border: 3px solid $green2 !important;
-    border-radius: 5px;
-    background-color: $green2;
-}
-
-// -dropdown-3-
-.dropdown-3 {
     border: 1px solid $lightgrey2; 
 }
 

@@ -1,0 +1,26 @@
+{
+    "texts": {
+        "copyright": "Copyright © 2022 Aysu News İlham Qurbanlı tərəfindən. Bütün hüquqlar qorunur.",
+        "text01": "Lorem Ipsum-un keçidlərinin bir çox variantı mövcuddur, lakin onların əksəriyyəti inyeksiya edilmiş yumor və ya bir qədər inandırıcı görünməyən təsadüfi sözlər vasitəsilə müəyyən formada dəyişikliyə məruz qalmışdır."
+    },
+    "titles": {
+        "title01": "Vacib Link",
+        "title02": "Tag ilə gözdən keçirin",
+        "title03": "Sosial Media"
+    },
+    "links": {
+        "link01": "Xəbərlər",
+        "link02": "Karyera",
+        "link03": "Texnologiya",
+        "link04": "Startaplar",
+        "link05": "Qadcetlər",
+        "link06": "Səyahət",
+        "link07": "Biznes",
+        "link08": "Həyat tərzi",
+        "link09": "Marketing",
+        "link10": "Tibbi",
+        "link11": "İdman",
+        "link12": "Karyera",
+        "link13": "Qidalar"
+    }
+}

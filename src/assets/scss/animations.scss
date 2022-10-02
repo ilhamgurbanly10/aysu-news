@@ -116,8 +116,8 @@
 // -grow-img-on-hover-
 .grow-img-on-hover img {
     transition: all .5s;
-    position: relative;
-    z-index: 1;
+    // position: relative;
+    // z-index: 1;
 }
 
 @media (hover: hover) {
@@ -160,19 +160,98 @@
     width: 100%;
 }
 
-// -grow-on-hover-
-.grow-on-hover {
+// -btn-underline-from-left
+.btn-underline-from-left {
+    position: relative;
+}
+
+.btn-underline-from-left::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: $darkblue;
     transition: all .5s;
 }
 
 @media (hover: hover) {
-    .grow-on-hover:hover {
-        transform: scale(1.1);
-        -webkit-transform: scale(1.1);
+    .btn-underline-from-left:hover::before {
+        width: 50px;
     }
 }
 
-.grow-on-hover:active {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
+.btn-underline-from-left:active::before {
+    width: 50px;
+}
+
+@media (min-width: 992px) {
+
+    // -btn-overline-
+    .btn-overline {
+        position: relative;
+    }
+
+    .btn-overline::before {
+        content: " ";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 0;
+        height: 4px;
+        border-radius: 7px;
+        background-color: $darkblue;
+        transition: all .5s;
+    }
+
+    @media (hover: hover) {
+        .btn-overline:hover::before {
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    .btn-overline:active::before,
+    .btn-overline.active::before {
+        left: 0;
+        width: 100%;
+    }
+
+}
+
+// -grow-on-hover-
+.grow-on-hover {
+    transition: all .3s;
+}
+
+@media (hover: hover) {
+    .grow-on-hover:hover,
+    .grow-child-img-on-hover:hover .grow-on-hover {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+    }
+}
+
+.grow-on-hover:active,
+.grow-child-img-on-hover:active .grow-on-hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+// -black-on-hover-
+.black-on-hover {
+    transition: all .3s;
+}
+
+@media (hover: hover) {
+    .black-on-hover:hover,
+    .black-child-img-on-hover:hover .black-on-hover {
+        filter: grayscale(100)
+    }
+}
+
+.black-on-hover:active,
+.black-child-img-on-hover:active .black-on-hover {
+    filter: grayscale(100)
 }

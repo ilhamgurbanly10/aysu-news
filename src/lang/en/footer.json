@@ -1,0 +1,27 @@
+{
+    "texts": {
+        "copyright": "Copyright © 2022 Aysu News by Ilham Gurbanly. All Rights Reserved.",
+        "text01": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+    },
+    "titles": {
+        "title01": "Important link",
+        "title02": "Browse by Tag",
+        "title03": "Social Media"
+    },
+    "links": {
+        "link01": "News",
+        "link02": "Career",
+        "link03": "Technology",
+        "link04": "Startups",
+        "link05": "Gadgets",
+        "link06": "Travel",
+        "link07": "Business",
+        "link08": "Lifestyle",
+        "link09": "Marketing",
+        "link10": "Medical",
+        "link11": "Sports",
+        "link12": "Career",
+        "link13": "Foods"
+    }
+
+}

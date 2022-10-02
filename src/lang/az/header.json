@@ -1,0 +1,33 @@
+{
+    "HeadContainer": {
+        "allNews": "Bütün Xəbərlər",
+        "allNewsText": "Dünyadan bütün xəbərləri yalnız burada oxuya bilərsiniz"
+    },
+    "menu": {
+        "item1": "Ana Səhifə",
+        "item2": "Xəbərlər",
+        "item3": "Həyat Tərzi",
+        "item4": "Qidalar",
+        "item5": "Biznes",
+        "item6": "Səyahət",
+        "item7": "Haqqımızda"
+    },
+    "subMenu1": {
+        "item1": "Son Xəbərlər",
+        "item2": "Dünyadan",
+        "item3": "Ölkə Daxili",
+        "item4": "Siyasət",
+        "item5": "İdman",
+        "item6": "Kriminal",
+        "item7": "Müharibə",
+        "item8": "Gülməli",
+        "item9": "Təbii Fəlakət"
+    },
+    "links": {
+        "latestNews": "Son Xəbərlərimiz"
+    },
+    "search": {
+        "placeholder": "Buradan axtarın..."
+    }
+
+}
